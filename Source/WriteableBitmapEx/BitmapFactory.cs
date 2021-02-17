@@ -181,7 +181,11 @@ namespace System.Windows.Media.Imaging
         /// <returns>A new WriteableBitmap containing the pixel data.</returns>
         public static WriteableBitmap FromContent(string relativePath)
         {
+#if OPENSILVER
+            using (var bmpStream = Application.GetResourceStream(new Uri(relativePath, UriKind.Relative)).Result.Stream)
+#else
             using (var bmpStream = Application.GetResourceStream(new Uri(relativePath, UriKind.Relative)).Stream)
+#endif
             {
                 return FromStream(bmpStream);
             }
@@ -210,5 +214,5 @@ namespace System.Windows.Media.Imaging
         }
 #endif
 
-    }
+        }
 }

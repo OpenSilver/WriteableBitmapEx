@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<metadata>
+  <id>WriteableBitmapEx</id>
+  <version>1.0.0-alpha-001</version>
+  <authors>Userware</authors>
+  <owners>Userware</owners>
+  <license type="expression">MIT</license>
+  <projectUrl>https://github.com/OpenSilver/WriteableBitmapEx</projectUrl>
+  <!-- <iconUrl></iconUrl> -->
+  <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  <summary>The WriteableBitmapEx library is a collection of extension methods for the WriteableBitmap. he WriteableBitmap class is available for all XAML flavors including WPF, Windows 10 UWP, Windows Phone, WinRT Windows Store XAML and Silverlight. It supports the .NET Framework and .NET Core 3 and allows the direct manipulation of a bitmap and could be used to generate fast procedural images by drawing directly to a bitmap.</summary>
+  <description>The WriteableBitmapEx library extensions.</description>
+  <!-- <releaseNotes></releaseNotes> -->
+  <copyright>Copyright (c) 2020, Userware. All rights reserved.</copyright>
+  <tags>WriteableBitmap Bitmap Graphics OpenSilver Silverlight WP7 WP7Dev WindowsPhone wp8 wpdev WPF .NET WinRT Metro Windows Store UAP UWP Core NETCore</tags>
+  <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="OpenSilver.WorkInProgress" version="1.0.0-alpha-018" />
+      </group>
+    </dependencies>
+</metadata>
+<files>    
+  <file src="..\..\Build\OpenSilver\Release\netstandard2.0\WriteableBitmapEx.xml" target="lib\netstandard2.0" /> 
+  <file src="..\..\Build\OpenSilver\Release\netstandard2.0\WriteableBitmapEx.dll" target="lib\netstandard2.0" /> 
+  <file src="..\..\Build\OpenSilver\Release\netstandard2.0\WriteableBitmapEx.pdb" target="lib\netstandard2.0" />  
+</files>
+</package>
